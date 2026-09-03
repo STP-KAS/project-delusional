@@ -38,6 +38,12 @@ KNS (:8080)  ── resolve .kas, pay URI, agent card, 402
 - **Gramlane** is the honest *stable-shaped fee* that covenants can actually back: **work**, not USD.
 - **Kaspa Till** is the shop that waits for a **native Kaspa L1 stable**. It does not invent `$1`.
 
+## Beyond the chain
+
+If you work in a plant, a grid, or industrial software (the world of [COPA-DATA / zenon](https://www.copadata.com/)): you already want **a name for a thing that acts** and **a bill that does not jump with a market**. That is this stack, said without tokens. It is **not** a zenon plugin and **not** a Kaspa company product.
+
+Read `/why` on any local site. Human: [Remco Schietecatte](https://www.linkedin.com/in/remco-schietecatte-29aa3b3aa/).
+
 ## What is true / not true
 
 | Claim | Status |
