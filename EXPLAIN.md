@@ -81,7 +81,11 @@ Everyone else: install/open their app. See `/wallets` on any site. **Log out** c
 - **Idea** (`/idea`) — what this URL is, how the three fit, what is not true.
 - **Why** (`/why`) — the same stack said without tokens: a plant/grid/agent needs a name and a boring bill. Kaspa and COPA-DATA/zenon are *context*, not partners.
 
-## 7. What we will not do
+## 7. House rule (Silverscript)
+
+Do not read **foreign** covenant state on v1-rc1. [PR 234](https://github.com/kaspanet/silverscript/pull/234) documents a framing attack on `readInputState`; it is **closed, not merged**. Our `.sil` files only `validateOutputState` their own UTXO. A till that inspects a KCC-20, or a vault that inspects WorkCredit, waits for a compiler that pins push headers. Details: kns `conventions/no-foreign-state.md`.
+
+## 8. What we will not do
 
 - UST-like rebase “backed by covenants”
 - Pretend L2 USDC is L1
@@ -89,7 +93,7 @@ Everyone else: install/open their app. See `/wallets` on any site. **Log out** c
 - Wire AgenC (Solana) into Kaspa settlement
 - Ask for seeds. Feedback that looks like a mnemonic is rejected.
 
-## 8. Files that are not in git
+## 9. Files that are not in git
 
 - `*.exe` binaries (build them)
 - `Documents\kaspa\feedback\` (your notes, this PC only)
