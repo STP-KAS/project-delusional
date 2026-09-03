@@ -76,7 +76,12 @@ Open:
 
 Everyone else: install/open their app. See `/wallets` on any site. **Log out** calls `disconnect` when the provider has it, then clears this page’s session.
 
-## 6. What we will not do
+## 6. Two tabs on every site
+
+- **Idea** (`/idea`) — what this URL is, how the three fit, what is not true.
+- **Why** (`/why`) — the same stack said without tokens: a plant/grid/agent needs a name and a boring bill. Kaspa and COPA-DATA/zenon are *context*, not partners.
+
+## 7. What we will not do
 
 - UST-like rebase “backed by covenants”
 - Pretend L2 USDC is L1
@@ -84,7 +89,7 @@ Everyone else: install/open their app. See `/wallets` on any site. **Log out** c
 - Wire AgenC (Solana) into Kaspa settlement
 - Ask for seeds. Feedback that looks like a mnemonic is rejected.
 
-## 7. Files that are not in git
+## 8. Files that are not in git
 
 - `*.exe` binaries (build them)
 - `Documents\kaspa\feedback\` (your notes, this PC only)
