@@ -83,7 +83,9 @@ Everyone else: install/open their app. See `/wallets` on any site. **Log out** c
 
 ## 7. House rule (Silverscript)
 
-Do not read **foreign** covenant state on v1-rc1. [PR 234](https://github.com/kaspanet/silverscript/pull/234) documents a framing attack on `readInputState`; it is **closed, not merged**. Our `.sil` files only `validateOutputState` their own UTXO. A till that inspects a KCC-20, or a vault that inspects WorkCredit, waits for a compiler that pins push headers. Details: kns `conventions/no-foreign-state.md`.
+Do not read **foreign** covenant state on v1-rc1. [PR 234](https://github.com/kaspanet/silverscript/pull/234) documents a framing attack on `readInputState`; it is **closed, not merged**. Our `.sil` files only `validateOutputState` their own UTXO. A till that inspects a KCC-20, or a vault that inspects WorkCredit, waits for a compiler that pins push headers.
+
+Concrete: http://127.0.0.1:8080/234 — same 42-byte `TokenState`, canonical vs `OP_PUSHDATA1` reframe, vault reads 2^59 against collateral of 1. Test: `go test ./internal/framing` fails if any non-FORBIDDEN `.sil` contains `readInputState`. Sketch of what we refuse: `contracts/v1/FORBIDDEN-ForeignTokenVault.sil` (not compiled).
 
 ## 8. What we will not do
 
