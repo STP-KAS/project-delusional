@@ -56,6 +56,7 @@ Read `/why` on any local site (http://127.0.0.1:8080/why and the same path on :8
 | AgenC / Tetsuo | Looked at ([agenc.ag](https://agenc.ag)). Solana marketplace. **Not integrated.** |
 | Kasware / Kastle inject | **Yes.** `window.kasware` / `window.kastle`. Ledger via [KasVault](https://kasvault.io). |
 | This site DMs you | **Never.** |
+| Foreign `readInputState` is safe on v1-rc1 | **No.** Same 42 bytes: amount 1, vault reads 264. [silverscript#234](https://github.com/kaspanet/silverscript/pull/234) closed unmerged. Live: `/234` on each site. |
 
 Full claims table lives in the running KNS app: http://localhost:8080/honest
 
