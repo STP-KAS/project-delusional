@@ -6,7 +6,7 @@ This website never DMs you. Nobody from these sites will message you. We never a
 
 ## What this is
 
-Three localhost websites that share one idea: **skip centralised stablecoins for dapps** — names, agents, and fees on Kaspa L1, without faking a dollar and without an L2. Cheap grams. Intelligent people should look. Still a delusional idea.
+**project delusional.** Kaspa master file, ideas and principles. Names, agents, and fees on Kaspa L1, without faking a dollar and without an L2. One principle: skip centralised stablecoins for dapps. Still a delusional idea.
 
 | Site | Repo | Run | What you see |
 | --- | --- | --- | --- |
