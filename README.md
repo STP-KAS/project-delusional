@@ -35,7 +35,7 @@ KNS (:8080)  ── resolve .kas, pay URI, agent card, 402
 ```
 
 - **KNS** is identity and discovery (live indexer today).
-- **Gramlane** is the cheap work meter: skip USDC-for-dApps. Fill is L1 (miners get the fee — Kaspa’s security budget). The amount is whoever hosts. Dumping the amount to miners is not worth it. The jar is this host’s book unless you run your own (`/host`). Still project delusional.
+- **Gramlane** is the cheap work meter: skip USDC-for-dApps. Fill is not a business (this desk keeps 0). Leftover output is Kaspa growth; the rest is miner fee. The jar is this host’s book unless you run your own (`/host`). Still project delusional.
 - **Kaspa Till** is the shop that waits for a **native Kaspa L1 stable**. It does not invent `$1`.
 
 ## Beyond the chain
