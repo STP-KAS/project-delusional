@@ -6,7 +6,7 @@ This website never DMs you. Nobody from these sites will message you. We never a
 
 ## What this is
 
-Three localhost websites that share one idea: **names, agents, and fees on Kaspa L1** — without faking a dollar and without an L2.
+Three localhost websites that share one idea: **skip centralised stablecoins for dapps** — names, agents, and fees on Kaspa L1, without faking a dollar and without an L2. Cheap grams. Intelligent people should look. Still a delusional idea.
 
 | Site | Repo | Run | What you see |
 | --- | --- | --- | --- |
@@ -35,7 +35,7 @@ KNS (:8080)  ── resolve .kas, pay URI, agent card, 402
 ```
 
 - **KNS** is identity and discovery (live indexer today).
-- **Gramlane** is the honest *stable-shaped fee* that covenants can actually back: **work**, not USD.
+- **Gramlane** is the cheap work meter: skip USDC-for-dApps. Fill is L1 (miners get the fee — Kaspa’s security budget). The amount is whoever hosts. Dumping the amount to miners is not worth it. The jar is this host’s book unless you run your own (`/host`). Still project delusional.
 - **Kaspa Till** is the shop that waits for a **native Kaspa L1 stable**. It does not invent `$1`.
 
 ## Beyond the chain
@@ -57,8 +57,13 @@ Read `/why` on any local site (http://127.0.0.1:8080/why and the same path on :8
 | Kasware / Kastle inject | **Yes.** `window.kasware` / `window.kastle`. Ledger via [KasVault](https://kasvault.io). |
 | This site DMs you | **Never.** |
 | Foreign `readInputState` is safe on v1-rc1 | **No.** Same 42 bytes: amount 1, vault reads 264. [silverscript#234](https://github.com/kaspanet/silverscript/pull/234) closed unmerged. Live: `/234` on each site. |
+| silverc master / a tagged `v1` is the pin | **No.** Pin is [v1-rc1](https://github.com/kaspanet/silverscript/releases/tag/v1-rc1) from [silverscript releases](https://github.com/kaspanet/silverscript/releases). Only that tag as of 5 Sep 2026. Do not recompile onto master. |
 
 Full claims table lives in the running KNS app: http://localhost:8080/honest
+
+Kaspa master file (public): [STP-KAS/kaspa-master-file](https://github.com/STP-KAS/kaspa-master-file) — GitHubs, KIPs, core X, Discord, Telegram APIs. Live tab: http://127.0.0.1:8081/masterfile
+
+Gramlane pins: [kaspanet/kips](https://github.com/kaspanet/kips) (Active KIP-16/17/20/21), [kccs](https://github.com/kaspanet/kccs) as drafts to refuse, [silverscript v1-rc1](https://github.com/kaspanet/silverscript/releases). Human tracker: [kaspaexplained.com/kips](https://kaspaexplained.com/kips). Live: http://127.0.0.1:8081/kips. Not KIP-2, not coderofstuff forks.
 
 ## Wallets
 
@@ -90,7 +95,7 @@ go test ./...
 go build -o kastill.exe ./cmd/kastill
 ```
 
-Silverscript artifacts were compiled with official `silverc` v1-rc1 (kaspanet / @OriNewman). RC is an RC.
+Silverscript artifacts were compiled with official `silverc` [v1-rc1](https://github.com/kaspanet/silverscript/releases/tag/v1-rc1) (kaspanet / @OriNewman). Official list: [silverscript/releases](https://github.com/kaspanet/silverscript/releases). Only that tag as of 5 Sep 2026. RC is an RC. Not master. Not a tagged `v1`.
 
 ## Docs inside the dApp repos
 
