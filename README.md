@@ -56,14 +56,14 @@ Read `/why` on any local site (http://127.0.0.1:8080/why and the same path on :8
 | AgenC / Tetsuo | Looked at ([agenc.ag](https://agenc.ag)). Solana marketplace. **Not integrated.** |
 | Kasware / Kastle inject | **Yes.** `window.kasware` / `window.kastle`. Ledger via [KasVault](https://kasvault.io). |
 | This site DMs you | **Never.** |
-| Foreign `readInputState` is safe on v1-rc1 | **No.** Same 42 bytes: amount 1, vault reads 264. [silverscript#234](https://github.com/kaspanet/silverscript/pull/234) closed unmerged. Live: `/234` on each site. |
-| silverc master / a tagged `v1` is the pin | **No.** Pin is [v1-rc1](https://github.com/kaspanet/silverscript/releases/tag/v1-rc1) from [silverscript releases](https://github.com/kaspanet/silverscript/releases). Only that tag as of 5 Sep 2026. Do not recompile onto master. |
+| Foreign `readInputState` is safe on v1.0.0 | **No.** Same 42 bytes: amount 1, vault reads 264. [silverscript#234](https://github.com/kaspanet/silverscript/pull/234) closed unmerged. Live: `/234` on each site. kns `go test` red X is a **comment grep**, not a hostile KasName call. |
+| silverc master is the pin | **No.** Pin is [v1.0.0](https://github.com/kaspanet/silverscript/releases/tag/v1.0.0) (`3ed9733`, 9 Sep 2026). v1-rc1 is stale as of the master-file freeze. Do not recompile onto master. |
 
 Full claims table lives in the running KNS app: http://localhost:8080/honest
 
 Kaspa master file (public): [STP-KAS/kaspa-master-file](https://github.com/STP-KAS/kaspa-master-file) — GitHubs, KIPs, core X, Discord, Telegram APIs. Live tab: http://127.0.0.1:8081/masterfile
 
-Gramlane pins: [kaspanet/kips](https://github.com/kaspanet/kips) (Active KIP-16/17/20/21), [kccs](https://github.com/kaspanet/kccs) as drafts to refuse, [silverscript v1-rc1](https://github.com/kaspanet/silverscript/releases). Human tracker: [kaspaexplained.com/kips](https://kaspaexplained.com/kips). Live: http://127.0.0.1:8081/kips. Not KIP-2, not coderofstuff forks.
+Gramlane pins: [kaspanet/kips](https://github.com/kaspanet/kips) (Active KIP-16/17/20/21), [kccs](https://github.com/kaspanet/kccs) as drafts to refuse, [silverscript v1.0.0](https://github.com/kaspanet/silverscript/releases/tag/v1.0.0). Human tracker: [kaspaexplained.com/kips](https://kaspaexplained.com/kips). Live: http://127.0.0.1:8081/kips. Not KIP-2, not coderofstuff forks. TN10 classroom wallet: [groks-wallet](https://github.com/STP-KAS/groks-wallet). Hard-test: [tn10-hard-test](https://github.com/STP-KAS/tn10-hard-test).
 
 ## Wallets
 
@@ -95,7 +95,7 @@ go test ./...
 go build -o kastill.exe ./cmd/kastill
 ```
 
-Silverscript artifacts were compiled with official `silverc` [v1-rc1](https://github.com/kaspanet/silverscript/releases/tag/v1-rc1) (kaspanet / @OriNewman). Official list: [silverscript/releases](https://github.com/kaspanet/silverscript/releases). Only that tag as of 5 Sep 2026. RC is an RC. Not master. Not a tagged `v1`.
+Silverscript artifacts: pin official `silverc` [v1.0.0](https://github.com/kaspanet/silverscript/releases/tag/v1.0.0) (kaspanet / @OriNewman, `3ed9733`). Official list: [silverscript/releases](https://github.com/kaspanet/silverscript/releases). v1-rc1 is **not** the pin after 9 Sep 2026. Not master.
 
 ## Docs inside the dApp repos
 
