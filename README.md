@@ -1,18 +1,24 @@
 # project delusional
 
-Kaspa L1 apps by **[@StppStp](https://x.com/StppStp)**.
+Kaspa L1 experiments by **[@StppStp](https://x.com/StppStp)**.
 
 This website never DMs you. Nobody from these sites will message you. We never ask for a seed, private key, or password.
 
+**Not a product.** Front door: [STP-KAS/kaspa-dapps](https://github.com/STP-KAS/kaspa-dapps) · statement: [NOT-A-PRODUCT.md](https://github.com/STP-KAS/kaspa-dapps/blob/main/NOT-A-PRODUCT.md) · desk prompt: [DESK-PROMPT.md](https://github.com/STP-KAS/kaspa-master-file/blob/main/DESK-PROMPT.md).
+
+Why: [KASPAglobal, 17 Sep 2026](https://x.com/kaspaglobal/status/2100536064683176270). A GitHub link that says it shipped is a proposal, a branch, a release, or an activation — until you open it. A node release is not wallet support. This desk does not ship wallet integrations.
+
+There is no spendable L1 stable, and no credible alternative on the horizon. KIP-21 is a consensus primitive, not a settled app-sequencing product. Until those two are settled, building real working dapps on Kaspa is not a useful spend of time or capital. This stack stays research / public goods: names, grams as a work meter, a till that quotes a reserved unit and settles KAS.
+
 ## What this is
 
-**project delusional.** Kaspa master file, ideas and principles. Names, agents, and fees on Kaspa L1, without faking a dollar and without an L2. One principle: skip centralised stablecoins for dapps. Still a delusional idea.
+**project delusional.** Ideas and principles. Names, agents, and fees on Kaspa L1, without faking a dollar and without an L2. One principle: skip centralised stablecoins. Still a delusional idea. Still not a product.
 
-| Site | Repo | Run | What you see |
-| --- | --- | --- | --- |
-| http://localhost:8080 | [kns](https://github.com/STP-KAS/kns) | `C:\Users\Remco\kns\kns.exe` | `.kas` names from the live KNS indexer. Agent cards, MCP, Kaspa HTTP 402, wallets. |
-| http://localhost:8081 | [gramlane](https://github.com/STP-KAS/gramlane) | `Documents\kaspa\superapp\gramlane.exe` | Sequenced **jobs billed in grams** (Work Credits). Not a stablecoin. |
-| http://localhost:8082 | [kaspa-till](https://github.com/STP-KAS/kaspa-till) | `Documents\kaspa\superappstablesalternative\kastill.exe` | Shop priced in reserved **kUSD** (not live). Pay KAS today. |
+| Site | Repo | What you see |
+| --- | --- | --- |
+| http://localhost:8080 | [kns](https://github.com/STP-KAS/kns) | `.kas` names from the live KNS indexer. Agent cards, MCP, Kaspa HTTP 402. Pay with QR / `kaspa:` URI / paste txid. |
+| http://localhost:8081 | [gramlane](https://github.com/STP-KAS/gramlane) | Sequenced **jobs billed in grams** (Work Credits). Not a stablecoin. |
+| http://localhost:8082 | [kaspa-till](https://github.com/STP-KAS/kaspa-till) | Shop priced in reserved **kUSD** (not live). Pay KAS today. |
 
 Bring all three up (Windows):
 
@@ -26,23 +32,17 @@ If the browser says “localhost refused to connect”, those `.exe` processes a
 
 ```
 human / agent
-    │
-    ▼
-KNS (:8080)  ── resolve .kas, pay URI, agent card, 402
-    │
-    ├── Gramlane (:8081)  ── dApp fees in GRAM (1 credit = 1 KIP-21 gram)
-    └── Kaspa Till (:8082) ── goods in reserved kUSD; KAS settlement until an L1 stable exists
+    |
+    v
+KNS (:8080)  -- resolve .kas, pay URI, agent card, 402
+    |
+    |-- Gramlane (:8081)  -- fees in GRAM (1 credit = 1 KIP-21 gram). Meter, not a sequencer product.
+    +-- Kaspa Till (:8082) -- goods in reserved kUSD; KAS settlement until an L1 stable exists
 ```
 
 - **KNS** is identity and discovery (live indexer today).
-- **Gramlane** is the cheap work meter: skip USDC-for-dApps. Fill is not a business (this desk keeps 0). Any Kaspa wallet via QR / kaspa: URI. Inject is only Kasware or Kastle. The jar is this host’s book unless you run your own (`/host`). Still project delusional.
+- **Gramlane** is the cheap work meter: skip USDC-for-dApps. Fill is not a business (this desk keeps 0). Any Kaspa wallet via QR / `kaspa:` URI / paste txid. **No in-page inject from this desk.** The jar is this host’s book unless you run your own (`/host`). Still project delusional.
 - **Kaspa Till** is the shop that waits for a **native Kaspa L1 stable**. It does not invent `$1`.
-
-## Beyond the chain
-
-If you work in a plant, a grid, or industrial software (the world of [COPA-DATA / zenon](https://www.copadata.com/)): you already want **a name for a thing that acts** and **a bill that does not jump with a market**. That is this stack, said without tokens. It is **not** a zenon plugin and **not** a Kaspa company product.
-
-Read `/why` on any local site (http://127.0.0.1:8080/why and the same path on :8081 / :8082). Idea tab is `/idea`. Human: [Remco Schietecatte](https://www.linkedin.com/in/remco-schietecatte-29aa3b3aa/).
 
 ## What is true / not true
 
@@ -53,62 +53,24 @@ Read `/why` on any local site (http://127.0.0.1:8080/why and the same path on :8
 | kUSD is live | **No.** Reserved unit of account. Merchant rate is a sign on the counter. |
 | Covenants mint dollars | **No.** Scripts conserve state. |
 | L2 / Igra / bridged USDC | **Out of scope.** This stack stays L1. |
-| AgenC / Tetsuo | Looked at ([agenc.ag](https://agenc.ag)). Solana marketplace. **Not integrated.** |
-| Kasware / Kastle inject | **Yes.** `window.kasware` / `window.kastle`. Ledger via [KasVault](https://kasvault.io). |
+| Production dapps on this stack | **No.** Not a product. Stables missing. Sequencing unsettled. |
+| Kasware / Kastle inject from this desk | **Withdrawn 17 Sep 2026.** [wallet-integration](https://github.com/STP-KAS/wallet-integration) throws on load. |
 | This site DMs you | **Never.** |
-| Foreign `readInputState` is safe on v1.0.0 | **No.** Same 42 bytes: amount 1, vault reads 264. [silverscript#234](https://github.com/kaspanet/silverscript/pull/234) closed unmerged. Live: `/234` on each site. kns `go test` red X is a **comment grep**, not a hostile KasName call. |
-| silverc master is the pin | **No.** Pin is [v1.0.0](https://github.com/kaspanet/silverscript/releases/tag/v1.0.0) (`3ed9733`, 9 Sep 2026). v1-rc1 is stale as of the master-file freeze. Do not recompile onto master. |
+| Foreign `readInputState` is safe on v1.0.0 | **No.** [silverscript#234](https://github.com/kaspanet/silverscript/pull/234) closed unmerged. |
+| silverc master is the pin | **No.** Pin is [v1.0.0](https://github.com/kaspanet/silverscript/releases/tag/v1.0.0) (`3ed9733`). |
 
-Full claims table lives in the running KNS app: http://localhost:8080/honest
+Kaspa master file: [STP-KAS/kaspa-master-file](https://github.com/STP-KAS/kaspa-master-file).
 
-Kaspa master file (public): [STP-KAS/kaspa-master-file](https://github.com/STP-KAS/kaspa-master-file) — GitHubs, KIPs, core X, Discord, Telegram APIs. Live tab: http://127.0.0.1:8081/masterfile
+## Pay path
 
-Gramlane pins: [kaspanet/kips](https://github.com/kaspanet/kips) (Active KIP-16/17/20/21), [kccs](https://github.com/kaspanet/kccs) as drafts to refuse, [silverscript v1.0.0](https://github.com/kaspanet/silverscript/releases/tag/v1.0.0). Human tracker: [kaspaexplained.com/kips](https://kaspaexplained.com/kips). Live: http://127.0.0.1:8081/kips. Not KIP-2, not coderofstuff forks. TN10 classroom wallet: [groks-wallet](https://github.com/STP-KAS/groks-wallet). Hard-test: [tn10-hard-test](https://github.com/STP-KAS/tn10-hard-test).
-
-## Wallets
-
-Connect on any of the three sites. **Log out** drops this page’s session.
-
-Only two wallets inject a Kaspa L1 provider here: **Kasware** and **Kastle**. Ledger signs in KasVault (or Kastle). Tangem, OneKey, ELLIPAL, SafePal, Kaspium, Kurncy, KasKeeper, Zelcore, OKX, NOW, Guarda, Bitget, MathWallet are cataloged with official links — we do not fake a connect.
+QR / `kaspa:` URI / paste txid. Never a seed. This desk does not ship wallet integrations.
 
 ## Safety & feedback
 
 - Safety: http://localhost:8080/safety (same text on :8081 and :8082)
-- Feedback tab stores JSON on **this PC only**: `C:\Users\Remco\Documents\kaspa\feedback\<app>\`
+- Feedback tab stores JSON on **this PC only**
 - Seeds / private keys in the form are rejected.
-
-## Build from source
-
-Need Go 1.22+.
-
-```powershell
-cd C:\Users\Remco\kns
-go test ./...
-go build -o kns.exe ./cmd/kns
-
-cd C:\Users\Remco\Documents\kaspa\superapp
-go test ./...
-go build -o gramlane.exe ./cmd/gramlane
-
-cd C:\Users\Remco\Documents\kaspa\superappstablesalternative
-go test ./...
-go build -o kastill.exe ./cmd/kastill
-```
-
-Silverscript artifacts: pin official `silverc` [v1.0.0](https://github.com/kaspanet/silverscript/releases/tag/v1.0.0) (kaspanet / @OriNewman, `3ed9733`). Official list: [silverscript/releases](https://github.com/kaspanet/silverscript/releases). v1-rc1 is **not** the pin after 9 Sep 2026. Not master.
-
-## Docs inside the dApp repos
-
-Gramlane folder also holds the stack map:
-
-- [VISION.md](https://github.com/STP-KAS/gramlane/blob/main/VISION.md)
-- [DIFF-MAP.md](https://github.com/STP-KAS/gramlane/blob/main/DIFF-MAP.md)
-- [HOW-IT-WORKS.md](https://github.com/STP-KAS/gramlane/blob/main/HOW-IT-WORKS.md)
-- [WORK-CREDITS.md](https://github.com/STP-KAS/gramlane/blob/main/WORK-CREDITS.md)
-- [GUIDE.md](https://github.com/STP-KAS/gramlane/blob/main/GUIDE.md)
-
-Till vision: [VISION.md](https://github.com/STP-KAS/kaspa-till/blob/main/VISION.md)
 
 ## Licence / not official
 
-Not the official KNS team, not Kaspa core, not financial advice. Local experiments on live indexer data.
+Not the official KNS team, not Kaspa core, not financial advice. Local experiments on live indexer data. Not a product.
