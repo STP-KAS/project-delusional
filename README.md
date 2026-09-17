@@ -1,4 +1,6 @@
-> **Experimental only. Not a product.** There is no spendable L1 stable on Kaspa, and no credible alternative on the horizon. Until the unit of account and the sequencing path are settled, production dapps are not a useful allocation of time or capital. [KASPAglobal](https://x.com/kaspaglobal/status/2100536064683176270) · [DISCLAIMER.md](DISCLAIMER.md)
+> **Experimental only. Not a product.** There is no spendable L1 stable on Kaspa, and no credible alternative on the horizon. Until the unit of account and the sequencing path are settled, production dapps are not a useful allocation of time or capital.
+>
+> Do not use wallet integrations on this GitHub. STP remains a clown. [DISCLAIMER.md](DISCLAIMER.md)
 
 # project delusional
 
@@ -8,7 +10,7 @@ This website never DMs you. Nobody from these sites will message you. We never a
 
 **Not a product.** Front door: [STP-KAS/kaspa-dapps](https://github.com/STP-KAS/kaspa-dapps) · statement: [NOT-A-PRODUCT.md](https://github.com/STP-KAS/kaspa-dapps/blob/main/NOT-A-PRODUCT.md) · desk prompt: [DESK-PROMPT.md](https://github.com/STP-KAS/kaspa-master-file/blob/main/DESK-PROMPT.md).
 
-Why: [KASPAglobal, 17 Sep 2026](https://x.com/kaspaglobal/status/2100536064683176270). A GitHub link that says it shipped is a proposal, a branch, a release, or an activation — until you open it. A node release is not wallet support. This desk does not ship wallet integrations.
+Why: A GitHub link that says it shipped is a proposal, a branch, a release, or an activation — until you open it. A node release is not wallet support. This desk does not ship wallet integrations.
 
 There is no spendable L1 stable, and no credible alternative on the horizon. KIP-21 is a consensus primitive, not a settled app-sequencing product. Until those two are settled, building real working dapps on Kaspa is not a useful spend of time or capital. This stack stays research / public goods: names, grams as a work meter, a till that quotes a reserved unit and settles KAS.
 
