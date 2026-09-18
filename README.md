@@ -65,6 +65,8 @@ KNS (:8080)  -- resolve .kas, pay URI, agent card, 402
 
 Kaspa master file: [STP-KAS/kaspa-master-file](https://github.com/STP-KAS/kaspa-master-file).
 
+Last encyclopedia catch-up: **18 Sep 2026** ([abd66dc](https://github.com/STP-KAS/kaspa-master-file/commit/abd66dc)) — DAGKnight / Argent / SilverScript / KCC. Pins hold.
+
 ## Pay path
 
 QR / `kaspa:` URI / paste txid. Never a seed. This desk does not ship wallet integrations.
