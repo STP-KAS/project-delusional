@@ -65,7 +65,7 @@ KNS (:8080)  -- resolve .kas, pay URI, agent card, 402
 
 Kaspa master file: [STP-KAS/kaspa-master-file](https://github.com/STP-KAS/kaspa-master-file).
 
-Last encyclopedia catch-up: **18 Sep 2026** ([abd66dc](https://github.com/STP-KAS/kaspa-master-file/commit/abd66dc)) — DAGKnight / Argent / SilverScript / KCC. Pins hold.
+Last encyclopedia catch-up: **20 Sep 2026** ([ec73dea](https://github.com/STP-KAS/kaspa-master-file/commit/ec73dea)) — kccs#24 head `7159d48` + #27 approval. Pins hold (no Final / DK merge).
 
 ## Pay path
 
