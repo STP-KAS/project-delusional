@@ -65,7 +65,7 @@ KNS (:8080)  -- resolve .kas, pay URI, agent card, 402
 
 Kaspa master file: [STP-KAS/kaspa-master-file](https://github.com/STP-KAS/kaspa-master-file).
 
-Last encyclopedia catch-up: **20 Sep 2026** ([ec73dea](https://github.com/STP-KAS/kaspa-master-file/commit/ec73dea)) — kccs#24 head `7159d48` + #27 approval. Pins hold (no Final / DK merge).
+Last encyclopedia catch-up: **21 Sep 2026** ([Now](https://github.com/STP-KAS/kaspa-master-file#now-read-this-first)). KCC-0’s file is Final (`c0bb8f3`). The kccs README index still says Draft. That is not KCC-20 Final. DAGKnight is still unmerged. The 20 Sep line that said “no Final” was true that evening.
 
 ## Pay path
 
